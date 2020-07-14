@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css" type="text/css"/>
 <title>Адаптивная форма записи на замер</title>
 </head>
 
@@ -27,22 +28,34 @@
 					    <input type="text" id="address" placeholder="Улица, дом, корпус, квартира" class="record-form__input">
 					    <input type="text" id="floor" placeholder="Этаж" class="record-form__input">
 				</fieldset>
-				<!-- Элемент `выбор ДА/НЕТ` -->
-				<div class="record-form__choose">
-					<!-- Элемент `вопрос для элемента выбора ДА/НЕТ` -->
-					<div class="record-form__choose-question-title">
+
+				<!-- Элемент `поле ввода типа radiobutton` -->
+				<div class="radiobuttons">
+					<div class="radiobuttons__choose-question-title">
+					<!-- вопрос для элемента выбора ДА/НЕТ` -->
 						<p>Являетесь ли Вы юридическим лицом?</p>
 					</div>
-					<!-- Элемент `поле ввода типа radiobutton` -->
-					<p><input type="radio" name="yes-no" value="y" checked>Да</p>
-					<!-- Элемент `поле ввода типа radiobutton` -->
-					<p><input type="radio" name="yes-no" value="n" checked>Нет</p>
+						<div class="radiobuttons_frame">
+							<!-- "Блок" `радио кнопка` -->
+							<div class="radio">
+								<!-- Элемент `поле ввода типа radiobutton` -->
+								<input type="radio" id="yes" name="yes-no" value="y" checked class="radio_input">
+								<label for="yes" class="radio_label">Да</label>
+							</div>
+							<!-- Блок `радио кнопка` -->
+							<div class="radio">
+								<!-- Элемент `поле ввода типа radiobutton` -->
+								<input type="radio" id="no" name="yes-no" value="n" class="radio_input">
+								<label for="no" class="radio_label">Нет</label>
+							</div>
+						</div>
 				</div>
 				<!-- Элемент `кнопка` -->
 				<button class="record-form__button">Далее</button>
 			</form>
 		</div>
 	</div>
+	
 </body>
 
 </html>
