@@ -1,13 +1,16 @@
-.record-form { /* форма записи */
-	width: 1200px;
-	height: 700px;
+.page-1 {
+	display: ;
 	width: 100%;
-	margin-left: 17%;
+}
+
+.record-form { /* форма записи */
+	width: 1100px;
+	height: 700px;
+	margin-left: 16%;
 	margin-top: 5%;
 }
 
 .record-form__body {/* тело формы */
-	width: 100%;
 }
 
 
@@ -22,7 +25,7 @@
 }
 
 .record-form__frame{
-	width: 900px;
+	width: 980px;
 	background: #FFFFFF;
 	border: 1px solid #E5E5E5;
 	box-sizing: border-box;
@@ -69,9 +72,41 @@
 	width:65px;
 }
 
-.radiobuttons__choose-question-title {/* вопрос в поле выбора */}
 
-.record-form__button { /* кнопка */
+.policy {
+	width: 100%;
+}
+
+.policy__wrapper{
+	display: flex;
+	margin-top: 30px;
+}
+
+.checkbox_input {
+	display: flex;
+}
+.checkbox_label {
+	display: flex;
+}
+.policy__text {
+	display: flex;
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	align-items: center;
+
+	/* Text / 02 */
+	color: #505565;
+}
+
+.policy__button{
+	display: flex;
+	margin-left: 275px;
+}
+
+.button { /* кнопка */
 	text-align: center;
 	font-family: HelveticaNeueCyr;
 	font-style: normal;
@@ -92,6 +127,8 @@
 	width: 100%;
 	margin-top:10%;
 }
+
+.radiobuttons__choose-question-title {/* вопрос в поле выбора */}
 
 .radiobuttons_frame{
 	display: grid;

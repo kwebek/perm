@@ -9,6 +9,8 @@
 </head>
 
 <body>
+<!-- НАЧАЛО ФОРМЫ № 1 -->
+<div class="page-1">
 	<!-- Блок `форма записи на замер` -->
 	<div class="record-form">
 		<!-- Элемент `тело блока формы` -->
@@ -53,13 +55,24 @@
 										</div>
 									</div>
 							</div>
-					<!-- Элемент `кнопка` -->
-					<button class="record-form__button">Далее</button>
+							<div class="policy">
+								<div class="policy__wrapper">
+								<!-- Элемент `поле ввода типа radiobutton` -->
+								<input type="checkbox" id="no" name="policy-accept" value="y" class="checkbox_input" checked>
+								<label for="no" class="checkbox_label"></label>
+								<div class="policy__text">Я согласен на обработку и передачу персональных данных &nbsp; <a href="#" onclick="myFunction();return false;">Конфиденциальность</a>&nbsp;</div>
+								<div class="policy__button">
+									<!-- Элемент `кнопка` -->
+									<button class="button">Далее</button>
+									</div>
+								</div>
+							</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+</div>
+<!-- КОНЕЦ ФОРМЫ № 1 -->
 </body>
 
 </html>
