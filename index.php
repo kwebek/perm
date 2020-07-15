@@ -48,28 +48,37 @@
 
 							<!-- БЛОК `поле ввода типа radiobutton` -->
 							<div class="radiobuttons">
-								<div class="radiobuttons__choose-question-title">
+								<div class="radiobuttons__wrapper">
+									<div class="radiobuttons__choose-question-title">
 								<!-- вопрос для элемента выбора ДА/НЕТ` -->
 									<p>Являетесь ли Вы юридическим лицом?</p>
-								</div>
-									<div class="radiobuttons_frame">
+									</div>
+									<div class="radiobuttons__frame">
+										<div class="radiobuttons__frame-wrapper">
 										<!-- "Блок" `радио кнопка` -->
-										<div class="radio">
+											<div class="radio">
 											<!-- Элемент `поле ввода типа radiobutton` -->
 											<input type="radio" id="yes" name="yes-no" value="y" checked class="radio_input">
 											<label for="yes" class="radio_label">Да</label>
-										</div>
-										<!-- Блок `радио кнопка` -->
-										<div class="radio">
+											</div>
+											<!-- Блок `радио кнопка` -->
+											<div class="radio">
 											<!-- Элемент `поле ввода типа radiobutton` -->
 											<input type="radio" id="no" name="yes-no" value="n" class="radio_input">
 											<label for="no" class="radio_label">Нет</label>
+											</div>
 										</div>
 									</div>
+								</div>
+								
+							</div>
+							<!-- БЛОК `разделитель с чертой` -->
+							<div class="divider">
+								<p></p>
 							</div>
 							<div class="policy">
 								<div class="policy__wrapper">
-								<!-- Блок `радио кнопка` -->
+								<!-- Блок `checkbox` -->
 								<div class="checkbox">
 									<!-- Элемент `поле ввода типа checkbox` -->
 									<input type="checkbox" id="check" name="policy-accept" value="y" class="checkbox__checkbox_input" checked>
@@ -82,8 +91,8 @@
 									</div>
 								</div>
 							</div>
+					<div class="require-text" id="require-text-1">* Поля обязательные к заполнению</div>
 				</form>
-				<div class="require-text">* Поля обязательные к заполнению</div>
 			</div>
 		</div>
 	</div>

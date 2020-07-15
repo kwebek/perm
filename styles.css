@@ -4,8 +4,6 @@
 }
 
 .record-form { /* форма записи */
-	width: 1100px;
-	height: 700px;
 	margin-left: 16%;
 	margin-top: 5%;
 }
@@ -149,12 +147,24 @@
 	display: flex;
 	position: relative;
 	width: 100%;
+}
+
+.radiobuttons__wrapper{
+	display: flex;
+	padding: 0px 16px;
 	margin-top:10%;
 }
 
-.radiobuttons__choose-question-title {/* вопрос в поле выбора */}
 
-.radiobuttons_frame{
+.radiobuttons__choose-question-title {/* вопрос в поле выбора */
+	display: flex;
+}
+
+.radiobuttons__frame{
+	display: flex;
+}
+
+.radiobuttons__frame-wrapper{
 	display: grid;
 	grid-template-columns:  1fr 1fr;
 	width: 50%;
@@ -168,6 +178,10 @@
 	border-radius: 4px;
 }
 
+.divider p {
+	margin-top: 37px;
+	border-bottom: solid 2px #E5E5E5;
+}
 
 /* СТИЛИЗУЕМ РАДИОКНОПКИ - СТАРТ - */
 
@@ -269,9 +283,92 @@ input[type=checkbox]:checked + label:before {
     background: red;
     border-radius: 10%;
 }
-}
-
-
 
 
 /* СТИЛИЗУЕМ ЧЕКБОКСЫ - КОНЕЦ - */
+
+
+/* АДАПТИВ для 1 стр - НАЧАЛО */
+@media screen and (max-width: 600px){
+
+.record-form__title {/* заголовок формы */
+	margin-top: 12px;
+}
+.record-form__subtitle{
+	grid-template-columns:  1fr;
+}
+.record-form__frame{
+	width: 100%;
+	padding: 0%;
+}
+.record-form { /* форма записи */
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 0%;
+}
+.record-form__fieldset {/* группа полей */
+	grid-template-columns:  1fr !important;
+	grid-template-rows: repeat(6, 48px) !important;
+}
+.record-form__input { /* поля ввода */
+	padding-left: 14px;
+	width: 100%;
+}
+.grid-item{
+	max-width: 99%;
+}
+.record-form__form {/* сама форма */
+	position: relative;
+}
+#require-text-1{
+	position: absolute;
+	bottom: 40%;
+	left: 120px;
+}
+
+.policy__wrapper{
+	display: grid;
+	padding: 0 15px;
+}
+
+.policy__button{
+	width: 100%;
+	margin:0;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.button {
+	width: 100%;
+}
+
+.radiobuttons{
+	display: grid;
+}
+
+.radiobuttons__wrapper{
+	display: grid;
+	margin-top: 0px;
+	grid-template-columns: 1fr !important;
+	margin: 0px;
+}
+
+.radiobuttons__frame-wrapper{
+	position: relative;
+	width: 100%;
+}
+
+.radiobuttons__frame{
+	margin: 0 15px;
+}
+
+.radio_label::after{
+	top: 4.8px;
+	left: 4.7px;
+}
+
+.divider{
+	display: none;
+}
+
+}
+/* АДАПТИВ для 1 стр - КОНЕЦ */
