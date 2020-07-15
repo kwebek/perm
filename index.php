@@ -26,12 +26,24 @@
 							<!-- Элемент `группа полей формы` -->
 							<fieldset class="record-form__fieldset">
 								<!-- Элементы `текстовые поля ввода` -->
-								<input type="text" id="fio" placeholder="Фамилия Имя Отчество" class="record-form__input">
-								<input type="phone" id="phone" placeholder="+7(---)-- -- ---" class="record-form__input">
-								<input type="e-mail" id="e-mail" placeholder="E-mail" class="record-form__input">
-								<input type="text" id="city" placeholder="Город" class="record-form__input">
-								<input type="text" id="address" placeholder="Улица, дом, корпус, квартира" class="record-form__input">
-								<input type="text" id="floor" placeholder="Этаж" class="record-form__input">
+								<div class="grid-item">
+									<input type="text" id="fio" placeholder="Фамилия Имя Отчество" class="record-form__input"> <div class="require">*</div>
+								</div>
+								<div class="grid-item">
+									<input type="phone" id="phone" placeholder="+7(---)-- -- ---" class="record-form__input"><div class="require">*</div>
+								</div>
+								<div class="grid-item">
+									<input type="e-mail" id="e-mail" placeholder="E-mail" class="record-form__input"><div class="require">*</div>
+								</div>
+								<div class="grid-item">
+									<input type="text" id="city" placeholder="Город" class="record-form__input"><div class="require">*</div>
+								</div>
+								<div class="grid-item">
+									<input type="text" id="address" placeholder="Улица, дом, корпус, квартира" class="record-form__input"><div class="require">*</div>
+								</div>
+								<div class="grid-item">
+									<input type="text" id="floor" placeholder="Этаж" class="record-form__input"><div class="require">*</div>
+								</div>
 							</fieldset>
 
 							<!-- БЛОК `поле ввода типа radiobutton` -->
@@ -57,10 +69,13 @@
 							</div>
 							<div class="policy">
 								<div class="policy__wrapper">
-								<!-- Элемент `поле ввода типа radiobutton` -->
-								<input type="checkbox" id="no" name="policy-accept" value="y" class="checkbox_input" checked>
-								<label for="no" class="checkbox_label"></label>
-								<div class="policy__text">Я согласен на обработку и передачу персональных данных &nbsp; <a href="#" onclick="myFunction();return false;">Конфиденциальность</a>&nbsp;</div>
+								<!-- Блок `радио кнопка` -->
+								<div class="checkbox">
+									<!-- Элемент `поле ввода типа checkbox` -->
+									<input type="checkbox" id="check" name="policy-accept" value="y" class="checkbox__checkbox_input" checked>
+									<label for="check" class="checkbox_label"></label>
+									<div class="policy__text">Я согласен на обработку и передачу персональных данных &nbsp; <a href="#" onclick="myFunction();return false;">Конфиденциальность</a>&nbsp;</div>
+								</div>
 								<div class="policy__button">
 									<!-- Элемент `кнопка` -->
 									<button class="button">Далее</button>
@@ -68,6 +83,7 @@
 								</div>
 							</div>
 				</form>
+				<div class="require-text">* Поля обязательные к заполнению</div>
 			</div>
 		</div>
 	</div>
